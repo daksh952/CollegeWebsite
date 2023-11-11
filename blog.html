@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Liberty College Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2024</h1>
+    </div>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="Certificate Image">
+                <h2>Online Programs</h2>
+                <p>Explore our diverse range of online programs designed to meet the evolving needs of students in 2024. Our courses are crafted to provide valuable skills and knowledge for a successful career.</p>
+                <br>
+                <p>Whether you are interested in Computer Science, Data Science, Machine Learning, Cyber Security, or Hardware Security, we have specialized programs to cater to your interests and career goals.</p>
+                <br>
+                <p>Join Liberty College and embark on a journey of online learning, where excellence meets flexibility. Our programs are led by experienced instructors, and the curriculum is designed to empower students in a rapidly changing technological landscape.</p>
+                <br>
+                <p>At Liberty College, we believe in the transformative power of education. Our online programs provide a platform for students to learn, collaborate, and succeed, no matter where they are located.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Computer Science</span>
+                    <span>32</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Cyber Security</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Hardware Security</span>
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Liberty College is dedicated to providing a world-class education, nurturing talent, and preparing students for success in a rapidly changing world. Join us on this journey of knowledge and discovery.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
